@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0;
+	 padding: 0;
+	 box-sizing: border-box;
 }
 
 html{
@@ -119,7 +120,7 @@ html{
     padding: 64px;
     background-image: url(img/smart-install.png);
     height: 480px;
-    box-sizing: border-box;
+
     margin-bottom: 32px;
 }
 
@@ -145,7 +146,6 @@ html{
     max-width: 554px;
     text-align: left;
     background-repeat: no-repeat;
-    box-sizing: border-box;    
 }
 
 .main-info{
@@ -186,12 +186,11 @@ html{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    border: 1px solid red;
     width: 359px;
     margin: 10px;
     padding: 44px 32px;
-    box-sizing: border-box;
-
+	 background: #FFFFFF;
+	 box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
 }
 
 .main-info-box-text{
@@ -201,7 +200,6 @@ html{
 
 .main-info-box-pic{
     margin-bottom: 51px;
-
 }
 
 .main-info-box2{
@@ -225,8 +223,8 @@ html{
 
 .main-info-box-link{
     text-decoration: none;
-
-    position: relative;
+	 position: relative;
+	 color: #5A98D0;	 
 }
 
 .main-info-box-link:after{
@@ -302,8 +300,6 @@ li{
 .contacts-header-top{
     height: 250px;
     padding-top: 51px;
-    /* background-image: url(img/ContactUs-pic.png);  
-    box-sizing: border-box; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,7 +311,6 @@ li{
 
 .contacts-header-top-text{
     width: 780px;
-    color: #fff;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0.04em;
@@ -380,7 +375,6 @@ li{
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
     padding: 16px 56px;
-    box-sizing: border-box;
 }
 
 .contacts-heading-h4{
@@ -399,9 +393,7 @@ li{
 
 .form-txt{
     border: 1px solid #356EAD;
-    box-sizing: border-box;
     border-radius: 10px;
-    opacity: 0.4;
     margin: 8px 0 32px;
     padding: 0 42px;
     font-weight: 300;
@@ -507,7 +499,6 @@ li{
 .footer-container-bottom-contacts{
     height: 478px;
     padding-top: 97px;
-    box-sizing: border-box;
 }
 
 .footer-contacts-box{
