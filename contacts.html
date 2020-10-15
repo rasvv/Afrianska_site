@@ -9,87 +9,100 @@
 </head>
 
 <body class="body">
+
     <header class="header">
-        <a class="menu" href="index.html">Главная</a>
-        <a class="menu" href="contacts.html">Контакты</a>
+        <div class="container">
+            <div class="header-menu">
+                <a class="menu" href="index.html">Главная</a>
+                <a class="menu" href="contacts.html">Контакты</a>
+            </div>
+        </div>
     </header>
 
     <main class="main">
-        <div class="contacts-header-top">
-            <h2 class="contacts-header-top-header heading-h2">Contact Us</h2>
-            <p class="contacts-header-top-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Recusandae omnis, possimus numquam reprehenderit aperiam dignissimos laudantium quisquam, tempora
-                quaerat nostrum est voluptatum libero aliquid mollitia.
-            </p>
-        </div>
+        <div class="container">
+            <div class="contacts-header-top">
+                <h2 class="contacts-header-top-header heading-h2">Contact Us</h2>
+                <p class="contacts-header-top-text text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae omnis, possimus numquam reprehenderit aperiam dignissimos laudantium quisquam, tempora
+                    quaerat nostrum est voluptatum libero aliquid mollitia.
+                </p>
+            </div>
 
-        <div class="contacts-main-box">
-            <div class="contacts-main-contacts">
-                <div class="contacts-main-contacts-image">
-                    <img class="contacts-main-image" src="img/noroot.png" alt="Icon">
+            <div class="contacts-main-box">
+                <div class="contacts-main-contacts">
+                    <div class="contacts-main-contacts-image">
+                        <img class="contacts-main-image" src="img/noroot.png" alt="Icon">
+                    </div>
+                    <div class="contacts-main-contacts-address">
+                        <h4 class="heading-h4">Address</h4>
+                        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+                    </div>
+                    <div class="contacts-main-contacts-phone">
+                        <h4 class="heading-h4">Phone</h4>
+                        <ul>
+                            <li>+7 233 32 23</li>
+                            <li>+7 233 23 32</li>
+                        </ul>
+                    </div>
+                    <div class="contacts-main-contacts-service">
+                        <h4 class="heading-h4">Online service</h4>
+                        <ul>
+                            <li><a href="https://geekbrains.ru" target="_blank">Our site</a></li>
+                            <li><a href="mailto:mail@mail.ru">Email</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="contacts-main-contacts-address">
-                    <h4 class="heading-h4">Address</h4>
-                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                </div>
-                <div class="contacts-main-contacts-phone">
-                    <h4 class="heading-h4">Phone</h4>
-                    <ul>
-                        <li>+7 233 32 23</li>
-                        <li>+7 233 23 32</li>
-                    </ul>
-                </div>
-                <div class="contacts-main-contacts-service">
-                    <h4 class="heading-h4">Online service</h4>
-                    <ul>
-                        <li><a href="https://geekbrains.ru" target="_blank">Our site</a></li>
-                        <li><a href="mailto:mail@mail.ru">Email</a></li>
-                    </ul>
+                <div class="contacts-main-form">
+                    <h4 class="contacts-main-form-heading heading-h4">Send us message</h4>
+                    <form class="form" action="#">
+                        Full Name <br><input class="form-input-name form-txt" type="text"
+                            placeholder="Иванов Иван Иванович"><br>
+                        Email <br><input class="form-input-email form-txt" type="email" placeholder="mail@mail.ru"><br>
+                        Message <br><textarea class="form-input-message form-txt" cols="30" rows="10"
+                            placeholder="Message"></textarea><br>
+                        <button class="form-btn" type="submit">Submit</button><br>
+                    </form>
                 </div>
             </div>
-            <div class="contacts-main-form">
-                <h4 class="contacts-main-form-heading heading-h4">Send us message</h4>
-                <form class="form" action="#">
-                    Full Name <br><input class="form-input-name form-txt" type="text"
-                        placeholder="Иванов Иван Иванович"><br>
-                    Email <br><input class="form-input-email form-txt" type="email" placeholder="mail@mail.ru"><br>
-                    Message <br><textarea class="form-input-message form-txt" cols="30" rows="10"
-                        placeholder="Message"></textarea><br>
-                    <button class="form-btn" type="submit">Submit</button><br>
-                </form>
+
+
+
+            <!-- <img src="img/map.jpg" alt="Карта"> -->
+            <div class="map-div">
+                <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/-/CCQ~ATbM~B" width="100%" height="300"
+                    frameborder="1" allowfullscreen="true">
+                </iframe>
             </div>
+            <a href="#">Вверх</a>
         </div>
-
-
-
-        <!-- <img src="img/map.jpg" alt="Карта"> -->
-        <div class="map-div">
-            <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/-/CCQ~ATbM~B" width="100%" height="300"
-                frameborder="1" allowfullscreen="true">
-            </iframe>
-        </div>
-        <a href="#">Вверх</a>
     </main>
 
     <footer class="footer">
-        <div class="footer-box">
-            <h3 class="footer-box-heading heading-h3">Intersted to woek
-                with our team?</h3>
-            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum vitae nesciunt itaque
-                eligendi magnam! Ut rerum possimus sapiente, atque accusamus officiis delectus nisi! Illo, veniam!</p>
+        <div class="container">
+            <div class="footer-box">
+                <h3 class="footer-box-heading heading-h3">Intersted to woek
+                    with our team?</h3>
+                <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum vitae nesciunt itaque
+                    eligendi magnam! Ut rerum possimus sapiente, atque accusamus officiis delectus nisi! Illo, veniam!
+                </p>
+            </div>
         </div>
 
         <hr>
-        <div class="footer-contacts-box">
-            <ul class="footer-contacts">
-                <li>Офис в самом центре города</li>
-                <li>+7 987 65 43</li>
-                <li>mail@mail.ru</li>
-            </ul>
-            <p class="footer-copy text">&copy;Все права защищены</p>
+        <div class="container">
+            <div class="footer-contacts-box">
+                <ul class="footer-contacts">
+                    <li>Офис в самом центре города</li>
+                    <li>+7 987 65 43</li>
+                    <li>mail@mail.ru</li>
+                </ul>
+                <p class="footer-copy text">&copy;Все права защищены</p>
+            </div>
         </div>
-
     </footer>
+
+
 </body>
 
 </html>
