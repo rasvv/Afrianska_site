@@ -69,9 +69,10 @@ html {
 .heading-top {
 	padding-top: 115px;
 	flex-grow: 1;
-	background-image: url(img/illustration.png);
+	/* background-image: url(img/illustration.png);
 	background-repeat: no-repeat;
-	background-position: right center;
+	background-position: right center; */
+	background: url(img/illustration.png) right center no-repeat;
 	background-size: 50%;
 }
 
@@ -111,37 +112,36 @@ html {
 
 .smart-box {
 	text-align: right;
-	padding: 64px;
-	background-image: url(img/smart-install.png);
-	height: 480px;
+	/* max-height: 480px; */
 	margin-bottom: 32px;
+	position: relative;
+	/* width: 100%; */
+}
+
+.smart-box img {
+	width: 100%;
 }
 
 .apps-box {
 	display: flex;
-	/* grid-template-columns: repeat(2, 554px); */
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	justify-content: space-between;
-	margin-bottom: 0 auto 120px;
-}
-
-.apps-box1 {
-	background-image: url(img/sparklite-pic.png);
-}
-
-.apps-box2 {
-	background-image: url(img/car-app-pic.png);
+	margin: 0 auto 120px;
 }
 
 .apps-box-item {
-	padding: 64px;
-	/* height: 480px; */
-	height: 417px;
-	width: 545px;
+	position: relative;
+	max-height: 417px;
 	text-align: left;
-	background-repeat: no-repeat;
 	margin-bottom: 32px;
-	background-size: contain;
+}
+
+.apps-box-item img {
+	width: 100%;
+}
+
+.apps-box2 {
+	margin-left: 20px;
 }
 
 .main-info {
@@ -149,11 +149,18 @@ html {
 }
 
 .other-projects {
+	position: absolute;
+	left: 64px;
+	top: 64px;
 	font-size: 32px;
 	font-weight: 400;
 	line-height: 46px;
 	letter-spacing: 0.05em;
 	color: #FFFFFF;
+}
+
+.other-projects-right {
+	right: 64px;
 }
 
 .apps-box-item.other-projects {
@@ -477,7 +484,6 @@ li {
 .footer-contacts {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -561,19 +567,12 @@ li {
 	opacity: .4;
 }
 
-@media (max-width: 1110px) {
-	.apps-box {
-		flex-direction: column;
-		align-items: center;
-	}
-}
-
 @media (max-width: 1024px) {
 	.container {
 		padding: 0 32px;
 	}
 	.heading-top {
-		background-position: right 280px;
+		background-position: right 90%;
 	}
 	.main-info-box {
 		flex-direction: column;
@@ -581,9 +580,24 @@ li {
 	}
 	/*Надо доделать адаптив*/
 	.smart-box {
-		min-height: 297px;
+		/* min-height: 297px; */
 		width: 100%;
 		margin-bottom: 32px;
+	}
+	.footer-contacts-box {
+		width: 323px;
+	}
+	.footer-contacts {
+		flex-direction: column;
+		padding-left: 40px;
+	}
+	.footer-contacts li {
+		text-align: left;
+		max-width: 1000px;
+		margin-bottom: 24px;
+	}
+	.footer-contacts-text::before {
+		left: -40px
 	}
 }
 
@@ -612,5 +626,13 @@ li {
 	.header-button {
 		padding: 0 8px;
 		margin-top: 32px;
+	}
+	.apps-box {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 64px;
+	}
+	.apps-box2 {
+		margin-left: 0;
 	}
 }
