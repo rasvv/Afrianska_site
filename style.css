@@ -23,12 +23,15 @@ html {
   display: inline-block;
 }
 
+.button:hover {
+  background: blue;
+}
+
 .text {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
   letter-spacing: 0.05em;
-  opacity: 0.6;
   text-align: left;
 }
 
@@ -194,6 +197,7 @@ li {
 .main-info-box-text {
   width: 295px;
   margin-bottom: 39px;
+  opacity: 0.6;
 }
 
 .main-info-box-pic {
@@ -221,10 +225,15 @@ li {
   color: #5a98d0;
 }
 
-.main-info-box-link:after {
+.main-info-box-link::after {
   position: absolute;
   right: -40px;
   content: url(img/arrow-right.png);
+}
+
+.main-info-box-link:hover {
+  color: red;
+  font-weight: 900;
 }
 
 .main-info-heading {
